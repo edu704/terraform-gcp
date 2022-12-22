@@ -6,16 +6,16 @@ terraform {
   }
 
    backend "gcs" {
-    bucket  = "barberoterraform"
+    bucket  = "terraformdevops"
     prefix  = "terraform/state"
   }
   
 }
 
 provider "google" {
-  project = "barbero-devops-iac"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  project = "Devops"
+  region  = "us-east1"
+  zone    = "us-east1-c"
 }
 
 resource "google_compute_network" "vpc_network" {
